@@ -8,6 +8,8 @@ to a section with the version name.
 
 ## Unreleased Changes
 
+* Fix dashboard to work on v16
+
 ## 0.57.4
 
 * Handle ZATCA HTTP status code 409 as a duplicate (for resend logic)
