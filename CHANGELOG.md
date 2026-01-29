@@ -11,6 +11,13 @@ to a section with the version name.
 * Fix dashboard to work on v16
 * Fix error lookup up item-level tax templates
     * Looks like a regression from 0.50.2
+* Fix print formats on v16
+  * Before version 0.37.1 of ksa_compliance, the print formats relied on item-wise tax details to retrieve tax values 
+    per line. While they no longer do so, the behavior is kept for when printing invoices generated on 
+    ksa_compliance versions older than 0.37.1
+  * v16 has a breaking change in how item wise tax details are stored 
+    ([reference](https://github.com/frappe/erpnext/wiki/Item-Wise-Tax-Details:-JSON-%E2%86%92-Child-Table)), so we 
+    now retrieve item wise tax details differently depending on ERPNext version
 
 ## 0.57.4
 
